@@ -3,27 +3,26 @@
     padding: 0; 
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-  
-}
 
-header {
-    background-color: pink;
+.header-container {
+    background-color: #494a4c;
     width: 100%;
-    height: 10em;
-    margin: 0em;   
+    height: 9em;
+    margin: 0em;
+    display: flex;
+    flex-direction: row;
+
 }
-h1 {
-    font-size: 2em; 
+.container__image {
+    width: 170px;
 }
-
-
-
+.container__list {
+    
+}
 
 
 footer {
+    margin-top: 50em; 
     height: 15em;
     width: 100%; 
     background-color: aqua;
