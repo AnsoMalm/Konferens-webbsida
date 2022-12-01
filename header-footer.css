@@ -20,8 +20,8 @@
 }
 .container__image {
     border-radius: 0.2em;
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 120px;
    /* box-shadow: 0em 0.3em 0.2em #494a4c ;*/
 }
 
@@ -73,10 +73,27 @@ span {
 
 /*Här slutar mobilversionen och går över till större skärm*/
 
-@media screen and (min-width 400px) {
-    
-    .container__image { 
-        max-width: 500px;
-        max-height: 200px;
+@supports (display: flex) {
+    @media screen and (min-width: 800px) {
+        .container__image {
+            width: 37%;
+            height: 90%;
+            display: flex;
+            align-items: flex-start;
+        }
+        .container__list {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .container__contact  {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+        }
     }
-}
+        
+        
+
+    }

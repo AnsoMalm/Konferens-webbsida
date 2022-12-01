@@ -12,7 +12,6 @@ body {
     justify-content: center;
 }
       
-}
 main {
     margin-bottom: 3em;
 }
@@ -53,3 +52,14 @@ button {
     padding: 0.5em;
     margin-top: 1.5em; 
 }
+
+@supports (display: flex) {
+    @media screen and (min-width: 800px) {
+
+        .container-mainheading > .container__image2 {
+            max-width: 40em;
+
+        }
+
+    
+    }
