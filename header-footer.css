@@ -1,11 +1,14 @@
-* {
-    margin: 0;
-    padding: 0; 
-}
+
 
 /* Här börjar mobilversionen*/
 
 .header-container {
+    position: sticky;
+    top: 0;
+    opacity: 0.95;
+}
+
+.container__head {
     background-color: #2f3133;
     /*width: 100%;*/
     height: 9em;
@@ -51,7 +54,6 @@ footer {
     background-color: #CBCDD4;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
 }
 .container-footer {
@@ -69,6 +71,12 @@ span {
     font-weight: bold;
 }
 
-/*Här slutar mobilversionen och går över till större skärm* 
+/*Här slutar mobilversionen och går över till större skärm*/
 
-@media 
+@media screen and (min-width 400px) {
+    
+    .container__image { 
+        max-width: 500px;
+        max-height: 200px;
+    }
+}
