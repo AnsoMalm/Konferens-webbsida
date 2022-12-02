@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 30px;
+}
+
+.container__image5 {
+    margin: 0.1em; 
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-size: 20px;
+}
+
+.container-textcard {
+    border: 1px solid black; 
+    margin: 0em; 
+    padding: 2em;
+    background-color: aqua;
+}
+
+li, p:nth-child(2) {
+    margin-top: 1em;
+    
+}
+article {
+    margin: 1em;
+}
+
+.fetaklassen {
+    font-weight: bold;
+}
+
+.kursiva {
+    font-style: italic;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 0.3em;
+}
