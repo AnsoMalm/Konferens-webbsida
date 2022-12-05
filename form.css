@@ -1,6 +1,6 @@
 * {
-    
-    margin: 0;
+    box-sizing: border-box;
+    /*margin: 0;*/
     padding: 0; 
 }
 
@@ -16,23 +16,13 @@ body {
 form {
     background-color: aqua;
     border: 1px solid black;
-    padding: 2em;
-    width: 15em; 
-    height: 60em;
-}
-
-.form-layout {
-    display: inline-block;
-    height: 40px;
-    width: 200px;
-    padding: 0.2em; 
-    /*position: relative;*/
+    padding: 1em;
+    height: 60em; 
 }
 
 
 .input-name, .input-secondname, .input-adress, .input-number, .input-city, .input-phone {  
     height: 100%;
-    /*position: absolute;*/
     text-align: flex-start;
     width: 100%;
     padding: 5em; 
@@ -40,14 +30,44 @@ form {
 
 input[type=text] {
     width: 100%;
-    padding: 4px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    padding: 2px;
     box-sizing: border-box;
   }
 
+input[type=tel] {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+input:invalid {
+    border-right: 0.5em solid red;
+}
+
+input:valid {
+    border-right: 0.5 solid green;
+
+}
+input:invalid {
+    visibility: visible;
+}
+
+.error-message {
+    visibility: hidden;
+	display: none;
+	margin: 0em;
+	font-size: 90%;
+	color: rgb(117, 16, 16);
+}
+
+
 .phone-message {
     font-size: 0.8em;
+    margin-top: 0.5em; 
     margin-bottom: 0.5em; 
 }
 .food-text, .day-text { 
@@ -60,10 +80,8 @@ input[type=text] {
 }
 
 .container-info {
-    width: 13em;
-    height: 30em; 
+    width: 13em; 
     padding: 2em;
     background-color: antiquewhite;
-
 }
 

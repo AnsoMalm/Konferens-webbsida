@@ -17,6 +17,7 @@
         <div class="form-layout">
             <label for="input-name">Namn:</label>
             <input id="input-name" type="text" value="" placeholder="Nina" required>
+            <p class="error-message">Var vänligen skriv in ditt namn</p>
         </div>
         <div class="form-layout">
             <label for="input-secondname">Efternamn:</label>
@@ -34,8 +35,6 @@
             <label for="input-city">Stad:</label>
             <input id="input-city" type="text" value="" required minlength="2" maxlength="25">
         </div>
-     
-
 
         <div class="form-layout">
             <label for="input-phone">Telefonnummer:</label>
@@ -46,14 +45,14 @@
             <label for="input-email">E-mail:</label>
             <input id="input-email" type="text" value="" required maxlength="30">
         </div>
-        <hr>
+    
         <div class="form-layout">
             <p class="food-text">Vad vill du ha för mat?</p>
+        </div>
             <div>
                 <input type="radio" name="food" id="food1" required />
                 <label for="food1">Kött</label>
             </div>
-            <div>
                 <input type="radio" name="food" id="food2" required />
                 <label for="food1">Fisk</label>
             </div>
@@ -92,7 +91,7 @@
 
             <button type="submit">Skicka in din anmälan</button>
     </form>
-    
+
     <section class="container-info">
         <div class="Info-text">
             <div class="upper-text">
@@ -124,6 +123,5 @@
             </ul>
         </div> 
     </section>
-
 </body>
 </html>
