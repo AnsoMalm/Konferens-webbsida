@@ -10,39 +10,45 @@
 <body> 
         <h1>MetCom 2022</h1>
         <h2>Anmälan till konferensen 2022</h2>
-
     <form>
-        <p>Skriv in dina personuppgifter</p>
-        <p>Fälten med en * är obligatoriska att fylla i. </p>
+        <div class="form-heading">
+            <h3>Skriv in dina personuppgifter</h3>
+        </div>
         <div class="form-layout">
             <label for="input-name">Namn:</label>
-            <input id="input-name" type="text" value="" placeholder="Nina" required> *
+            <input id="input-name" type="text" value="" placeholder="Nina" required>
         </div>
         <div class="form-layout">
             <label for="input-secondname">Efternamn:</label>
-            <input id="input-secondname" type="text" value=""placeholder="Svensson" required> *
-        </div>
-      
-        <div class="form-layout">
-            <label for="input-adress">Adress</label>
-            <input for="input-adress" type="text" value="" placeholder="Gatuadress" required><br>
-            <label for="input-number">Postnummer</label>
-            <input id="input-number" type="text" value="" required minlength="5" maxlength="8"> 
-            <label for="input-city">Stad</label>
-            <input id="input-city" type="text" value="" required> *
+            <input id="input-secondname" type="text" value=""placeholder="Svensson" required> 
         </div>
         <div class="form-layout">
-            <label for="input-phone">Telefonnummer</label>
+            <label for="input-adress">Adress:</label>
+            <input id="input-adress" type="text" value="" placeholder="Gatuadress" required>
+        </div>
+        <div class="form-layout">
+            <label for="input-number">Postnummer:</label>
+            <input id="input-number" type="text" value="" placeholder="123 45" required minlength="5" maxlength="8">
+        </div>
+        <div class="form-layout">
+            <label for="input-city">Stad:</label>
+            <input id="input-city" type="text" value="" required minlength="2" maxlength="25">
+        </div>
+     
+
+
+        <div class="form-layout">
+            <label for="input-phone">Telefonnummer:</label>
             <input id="input-phone" type="tel" value="" placeholder="070-123 456 78" required minlength="8" maxlength="16">
         </div>
-        <p>Fyll i ditt telefonnummer och få uppdateringar av Konferensen. </p>
+        <p class="phone-message">Fyll i ditt telefonnummer om du vill ha uppdateringar</p>
         <div class="form-layout">
-            <label for="input-email">E-mail</label>
-            <input id="input-email" type="text" value="" required>
+            <label for="input-email">E-mail:</label>
+            <input id="input-email" type="text" value="" required maxlength="30">
         </div>
         <hr>
         <div class="form-layout">
-            <label>Vad vill du ha för mat?</label>
+            <p class="food-text">Vad vill du ha för mat?</p>
             <div>
                 <input type="radio" name="food" id="food1" required />
                 <label for="food1">Kött</label>
@@ -55,12 +61,12 @@
                 <input type="radio" name="food" id="food3" required />
                 <label for="food1">Vegetariskt</label>
             </div>
-            <div>
-            <label>Om du har allergier eller annat du vill informera</label>
-            <textarea name="message" rows="10" cols="40"></textarea>
+            <div class="form-layout">
+            <label class="message-box">Om du har allergier eller annat du vill informera</label>
+            <textarea name="message" rows="10" cols="25" maxlength="170"></textarea>
             </div>
             <hr>
-            <p>Vilka dagar vill du gå?</p>
+            <p class="day-text">Vilka dagar vill du gå?</p>
             <label>Välj på Stora-passet eller Dagspasset</label>
             <div>
                 <input type="radio" name="pass" id="pass1" required>
@@ -72,21 +78,21 @@
             </div>
             <label>Om du väljer dagspasset - välj vilken/vilka dagar du vill gå. </label>
             <div>
-                <input type="checkbox" name="freday" id="freday" required>
+                <input type="checkbox" name="freday" id="freday">
                 <label for="freday">Fredag</label>
             </div>
             <div>
-                <input type="checkbox" name="saturday" id="saturday" required>
+                <input type="checkbox" name="saturday" id="saturday">
                 <label for="saturday">Lördag</label>
             </div>
             <div>
-                <input type="checkbox" name="sunday" id="sunday" required>
+                <input type="checkbox" name="sunday" id="sunday">
                 <label for="sunday">Söndag</label>
             </div>
 
             <button type="submit">Skicka in din anmälan</button>
     </form>
-
+    
     <section class="container-info">
         <div class="Info-text">
             <div class="upper-text">
@@ -96,7 +102,6 @@
             <p>9 - 11 December 2022</p>
             </div>
         </div>
-
         <div class="Info-price">
             <p>Deltagarpris:</p>
             <ul> 
@@ -117,8 +122,8 @@
                 <p>Ingår lunch och fika</p>
                 <hr>
             </ul>
-        </div>
-        
+        </div> 
     </section>
+
 </body>
 </html>
