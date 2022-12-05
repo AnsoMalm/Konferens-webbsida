@@ -7,10 +7,16 @@
 body {
     margin: 0; 
     padding: 0; 
+}
+
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 .container-info {
@@ -18,7 +24,8 @@ body {
     height: 100%;
     padding: 1.2em;
     background-color: antiquewhite;
-    margin-bottom: 2em;
+    margin: 0em 1em 2em;
+
 }
 
 form {
@@ -26,6 +33,7 @@ form {
     border: 1px solid black;
     padding: 1em;
     height: 65em; 
+    margin: 0em 1em 2em;
 }
 
 
@@ -87,5 +95,42 @@ input:invalid {
     margin: 0em 4em 0em 0em; 
 }
 
+@media screen and (min-width: 580px) {
+    .container-info {
+        max-width: 20em;
+        margin-right: 1em;
+    }
+    .container-form {
+        max-width: 28em;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 1em;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .container-form {
+        max-width: 40%;
+        margin-right: 2em;
+    }
+
+    .container-info {
+        max-width: 30em; 
+    }
+    h1, h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 5em;
+    }
+    
+}
 
 
