@@ -1,15 +1,37 @@
 body {
+    background-color: #FAFAFA;
     font-family: 'Inter', sans-serif;
 }
 
 h1 {
-
+    font-size: 40px;
 }
 
 h2 {
-
+    font-size: 23px;
 }
 
 h3 {
+    font-size: 20px;
+}
 
+p {
+    font-size: 15px;
+}
+
+li {
+
+}
+
+.fetaklassen {
+    font-weight: bold;
+}
+
+.kursiva {
+    font-style: italic;
+    font-weight: none;
+}
+
+button {
+    
 }
