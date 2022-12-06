@@ -47,15 +47,26 @@ button {
 
 }
 
-@supports (display: flex) {
-    @media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
+    
+    .container__image2 {
+        width: 500px;
+        height: 300px; 
+    }
+    .container__text {
+    }
+    
+}
 
-        .container-mainheading > .container__image2 {
-            max-width: 40em;
+@media screen and (min-width: 800px) {
+
+        .container__image2 {
+            width: 100%;
+            height: 400px;
+
+
+           
 
         }
 
-    
     }
-
-}
