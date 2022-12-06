@@ -21,6 +21,11 @@ p, label {
     font-size: 15px;
 }
 
+.linespacing {
+    line-height: 20px;
+
+}
+
 .fetaklassen {
     font-weight: bold;
 }
