@@ -50,6 +50,12 @@ a {
     text-align: center;
     text-decoration: none;
 }
+
+li a:hover {
+    font-size: 25px;
+    
+
+}
  
 
 footer { 
