@@ -37,6 +37,12 @@
     flex-direction: row;
     justify-content: center; 
 }
+
+ul {
+    margin: 0;
+    padding: 1em;
+}
+
 a {
     font-size: 1.3em;
     color: white;
