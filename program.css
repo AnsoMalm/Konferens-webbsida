@@ -40,7 +40,7 @@ body {
     border-radius: 2px; 
     margin: 1em 0.2em 1em 0.2em; 
     padding: 1.5em;
-    background-color:#C5D7E3;
+    background-color: var(--lightblue);
 }
 
 li, p:nth-child(2) {
