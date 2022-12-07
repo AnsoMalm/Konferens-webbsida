@@ -28,6 +28,10 @@ h1, h2 {
     margin: 0em 1em 1em;
 }
 
+.price {
+    color: var(--red)
+}
+
 form {
     background-color: var(--grey);
     /*border: 0.3px solid grey;*/
