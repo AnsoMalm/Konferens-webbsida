@@ -1,22 +1,36 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 
 h1 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    font-size: 30px;
+    margin: 0.5em 0em 0.3em 0em;
 }
+.mainheading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+ }
 
-.container__image5 {
-    margin: 0.1em; 
-}
+ .container-programtext {
+    text-align: center;
+ }
 
-h2 {
-    margin-bottom: 1em;
+
+.heading2 {
+    text-align: center;
+    margin: 0.6em 0em 0em 0em;
     font-size: 20px;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container-textcard {
@@ -31,7 +45,7 @@ li, p:nth-child(2) {
     
 }
 article {
-    margin: 1em;
+    margin: 0.3em;
 }
 
 
