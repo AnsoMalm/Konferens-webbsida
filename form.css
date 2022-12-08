@@ -50,6 +50,7 @@ form {
     padding: 5em; 
 }
 
+
 input[type=text] {
     font-size: 15px;
     width: 100%;
@@ -77,6 +78,11 @@ input::placeholder {
     color: grey;
 }
 
+input[type="radio"]:hover, 
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
 input:invalid {
     border-right: 0.5em solid red;
 }
@@ -85,9 +91,9 @@ input:valid {
     border-right: 0.5em solid green;
 
 }
-input:invalid {
+/*input:invalid {
     visibility: visible;
-}
+}*/
 
 .error-message {
     visibility: hidden;
@@ -97,11 +103,27 @@ input:invalid {
 	color: rgb(117, 16, 16);
 }
 
+.formlayout-input {
+    font-weight: bold;
+}
 
-.phone-message {
-    font-size: 0.8em;
-    margin-top: 0.5em; 
-    margin-bottom: 0.5em; 
+
+.formlayout-heading label {
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.formlayout-message label {
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.formlayout-pass label, .formlayout-daypass label {
+    font-size: 14px;
+    font-weight: bold;
+
 }
 
 .form-layout {
@@ -111,14 +133,7 @@ input:invalid {
 .form-layout > .message-box {
     margin: 0em 4em 0em 0em; 
 }
-.food-text, .day-text { 
-    font-weight: bold;
-    margin: 0 1;
-}
 
-.passet, .dagspasset {
-    margin-bottom: 1em;
-}
 
 @media screen and (min-width: 600px) {
 

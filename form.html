@@ -69,70 +69,82 @@
             </section>
             <form class="container-form">
                 <div class="form-heading">
-                    <h4>Skriv in dina personuppgifter</h4>
-                </div>
-                <div class="form-layout">
+                    <label><h4>Skriv in dina personuppgifter</h4></label>
+                <div class="formlayout-input">
                     <label for="input-name">Namn:</label>
                     <input id="input-name" type="text" value="" placeholder="Nina" required>
                     <p class="error-message">Var vänligen skriv in ditt namn</p>
                 </div>
                 <br>
-                <div class="form-layout">
+                <div class="formlayout-input">
                     <label for="input-secondname">Efternamn:</label>
                     <input id="input-secondname" type="text" value=""placeholder="Svensson" required> 
                 </div>
                 <br>
-                <div class="form-layout">
+                <div class="formlayout-input">
                     <label for="input-adress">Adress:</label>
                     <input id="input-adress" type="text" value="" placeholder="Gatuadress" required>
                 </div>
                 <br>
-                <div class="form-layout">
+                <div class="formlayout-input">
                     <label for="input-number">Postnummer:</label>
                     <input id="input-number" type="text" value="" placeholder="123 45" required minlength="5" maxlength="8">
                 </div>
                 <br>
-                <div class="form-layout">
+                <div class="formlayout-input">
                     <label for="input-city">Stad:</label>
                     <input id="input-city" type="text" value="" required minlength="2" maxlength="25">
                 </div>
                 <br>
-                <div class="form-layout">
+                <div class="formlayout-input">
                     <label for="input-phone">Telefonnummer:</label>
                     <input id="input-phone" type="tel" value="" placeholder="070-123 456 78" required minlength="8" maxlength="16">
                 </div>
-                <p class="phone-message">Fyll i ditt telefonnummer om du vill ha uppdateringar.</p>
                 <br>
-                <div class="form-layout">
+                <div class="formlayout-input">
                     <label for="input-email">E-mail:</label>
                     <input id="input-email" type="text" value="" required maxlength="30">
                 </div>
                 <hr>
-                    <p class="food-text">Beställa lunch & middag:</p>
-                <div class="form-layout">
-                        <input type="radio" name="food" id="food1" required />
+                <div class="formlayout-heading">
+                    <label>Välj nedan vad du vill ha för mat:</label>
+                </div>
+                    <br>    
+                    <div class="formlayout__food">
+                        <input type="radio" name="food-meny" id="food1" required />
                         <label for="food1">Kött</label>
                     </div>
-                    <div class="form-layout">
-                        <input type="radio" name="food" id="food2" required />
-                        <label for="food1">Fisk</label>
+
+                    <div class="formlayout__food">
+                        <input type="radio" name="food-meny" id="food2" required />
+                        <label for="food2">Fisk</label>
                     </div>
-                    <div class="form-layout">
-                        <input type="radio" name="food" id="food3" required />
-                        <label for="food1">Vegetariskt</label>
+
+                    <div class="formlayout__food">
+                        <input type="radio" name="food-meny" id="food3" required />
+                        <label for="food3">Vegetariskt</label>
                     </div>
-                    <div class="form-layout">
-                        <input type="radio" name="nofood" id="nofood" required />
-                        <label for="food1">Ingen mat</label>
+
+                    <div class="formlayout__food">
+                        <input type="radio" name="food-meny" id="nofood" required />
+                        <label for="nofood">Ingen mat</label>
                     </div>
-                    <br>
-                    <div class="form-layout">
-                    <label class="message-box">Om du har allergier eller annat du vill informera oss</label>
-                    <textarea name="message" rows="10" cols="30" maxlength="170"></textarea>
+                        <br>
+                    <div>
+                        <div class="formlayout-message">
+                            <label>Om du har allergier/annan information</label>
+                        </div>
+                        <textarea name="message" rows="10" cols="30" maxlength="170"></textarea>
                     </div>
                     <hr>
-                    <p class="day-text">Vilka dagar vill du gå?</p>
-                    <p class="passet">Välj på Stora-passet eller Dagspasset</label>
+                    <div class="formlayout-heading">
+                        <label>Vilka dagar vill du gå?</label>
+                    </div>
+                    <br>
+                    <div class="formlayout-pass">
+                        <label>Välj på Stora-passet eller Dagspasset</label>
+                    </div>
+                    <br>
                     <div class="form-layout">
                         <input type="radio" name="pass" id="pass1" required>
                         <label for="pass1">Stora-passet</label>
@@ -141,17 +153,21 @@
                         <input type="radio" name="pass" id="pass2" required>
                         <label for="pass2">Dagspasset</label>
                     </div>
-                    <p class="dagspasset">Om du väljer dagspasset - välj vilken/vilka dagar du vill gå </label>
+                    <br>
+                    <div class="formlayout-daypass">
+                        <label>Om du väljer dagspasset - välj vilken/vilka dagar du vill gå</label>
+                    <br>
+                    </div>
                     <div class="form-layout">
-                            <input type="checkbox" name="freday" id="freday">
+                            <input type="checkbox" name="freday" id="freday" required>
                             <label for="freday">Fredag</label>
                         </div>
                         <div class="form-layout">
-                            <input type="checkbox" name="saturday" id="saturday">
+                            <input type="checkbox" name="saturday" id="saturday" required>
                             <label for="saturday">Lördag</label>
                         </div>
                         <div class="form-layout">
-                            <input type="checkbox" name="sunday" id="sunday">
+                            <input type="checkbox" name="sunday" id="sunday" required>
                             <label for="sunday">Söndag</label>
                         </div>
                     </div>
