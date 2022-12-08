@@ -53,10 +53,10 @@ body {
 }
 
 
-li, p:nth-child(2) {
-    margin-top: 1em;
+/*li p:nth-child(2) {
+    margin-top: 2rem;
     
-}
+}*/
 
 .time {
     margin: 0.5rem 0rem 0.5rem 0rem;
