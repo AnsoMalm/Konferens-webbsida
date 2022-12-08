@@ -83,8 +83,6 @@ main {
         .card1 {
             display:flex;
             flex-direction: row-reverse;
-            max-width: 70em;
-            margin: 2em 0em 2em;
         }
 
         .card1 .container__text {
@@ -96,7 +94,6 @@ main {
         .card2 {
             display: flex;
             flex-direction: row;
-            max-width: 70em;
         }
 
         .card2 .container__text {
