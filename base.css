@@ -1,12 +1,16 @@
 
 :root {
 
-    /*Bakgrundfärg och textfärg att använda på alla sidor*/
-    --purple: #a56bff;
+    /*Bakgrundfärg,textfärg & linje under text att använda på alla sidor*/
+    --background-button: #a56bff;
     --white: #F7F7F7;
-    --grey: #dbe1e7;
+    --primary-color: #dbe1e7;
     --lightblue: #C5D7E3;
-    --red: #A63004;
+    --price: #A63004;
+    --small-heading: underline;
+    --box1:#D3E3FA;
+    --box2:#C5D7E3;
+    --box3:#D5E9F0;
 
 }
 
@@ -15,22 +19,30 @@ html {
 }
 
 body {
-    background-color: var(--grey);
+    background-color: var(--primary-color);
     font-family: 'Inter', sans-serif;
     color: rgba(60, 63, 69, 0.929);
 }
 
 h1 {
     font-size: 33px;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 22px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.7rem;
 }
 
 h3 {
-    text-decoration: underline;
+    text-decoration: var(--small-heading);
     font-size: 18px;
+}
+
+h4 {
+    text-decoration: var(--small-heading);
+    font-size: 15px;
 }
 
 p, label {
@@ -42,20 +54,32 @@ p, label {
 
 }
 
-.fetaklassen {
-    font-weight: bold;
+p .fetaklassen {
+    font-size: 17px;
 }
 
+.fetaklassen {
+    font-weight: bold;
+    font-size: ;
+}
+
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 .kursiva {
     font-style: italic;
 }
 
+.price {
+    color: var(--price)
+}
 
 button {
     display:inline-block;
     padding:0.8em 1.6em;
     margin: 1em 0.1em 0.1em 0;
-    background-color: var(--purple);
+    background-color: var(--background-button);
     border: 0.18em solid rgba(255,255,255,0);
     border-radius:2em;
     box-sizing: border-box;

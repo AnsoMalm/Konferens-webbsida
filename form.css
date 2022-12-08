@@ -1,10 +1,6 @@
-* {
-    box-sizing: border-box;
-    /*margin: 0;*/
-    padding: 0; 
-}
 
 body {
+    box-sizing: border-box;
     margin: 0; 
     padding: 0; 
 }
@@ -15,8 +11,10 @@ main {
     justify-content: center;
 }
 
-h1, h2 {
+.mainheading2 {
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 .container-info {
@@ -28,13 +26,17 @@ h1, h2 {
     margin: 0em 1em 1em;
 }
 
+ul li {
+    padding: 0;
+    margin: 0; 
+}
+
 .price {
-    color: var(--red)
+    color: var(--red);
 }
 
 form {
     background-color: var(--grey);
-    /*border: 0.3px solid grey;*/
     padding: 1em;
     height: 90em; 
     margin: 0em 1em 1em;
