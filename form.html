@@ -72,18 +72,17 @@
                     <label><h4>Skriv in dina personuppgifter</h4></label>
                 <div class="formlayout-input">
                     <label for="input-name">Namn:</label>
-                    <input id="input-name" type="text" value="" placeholder="Nina" required>
-                    <p class="error-message">Var vänligen skriv in ditt namn</p>
+                    <input id="input-name" type="text" value="" placeholder="Nina" maxlength="30" required>
                 </div>
                     <br>
                 <div class="formlayout-input">
                     <label for="input-secondname">Efternamn:</label>
-                    <input id="input-secondname" type="text" value=""placeholder="Svensson" required> 
+                    <input id="input-secondname" type="text" value=""placeholder="Svensson" maxlength="30" required> 
                 </div>
                     <br>
                 <div class="formlayout-input">
                     <label for="input-adress">Adress:</label>
-                    <input id="input-adress" type="text" value="" placeholder="Gatuadress" required>
+                    <input id="input-adress" type="text" value="" placeholder="Gatuadress" maxlength="40" required>
                 </div>
                     <br>
                 <div class="formlayout-input">
@@ -103,7 +102,7 @@
                     <br>
                 <div class="formlayout-input">
                     <label for="input-email">E-mail:</label>
-                    <input id="input-email" type="text" value="" required maxlength="30">
+                    <input id="input-email" type="text" value="" required maxlength="40">
                 </div>
                 <hr>
                 <div class="formlayout-heading">
@@ -129,8 +128,8 @@
                     <br>
                 <div class="formlayout-message">
                     <label>Om du har allergier/annan information</label>
-                    <textarea name="message" rows="10" cols="30" maxlength="170"></textarea>
                 </div>
+                    <textarea name="message" rows="10" cols="32" maxlength="170"></textarea>
                     <hr>
                 <div class="formlayout-heading">
                     <label>Vilka dagar vill du gå?</label>
@@ -150,22 +149,25 @@
                 </div>
                     <br>
                 <div class="formlayout-daypass">
-                    <label>Om du väljer dagspasset - välj vilken/vilka dagar du vill gå</label>
+                    <label>Om du väljer dagspasset - välj vilken dag du vill gå</label>
                     <br>
                 </div>
                 <div class="form-layout">
-                    <input type="checkbox" name="freday" id="freday" required>
+                    <input type="radio" name="days" id="freday" required>
                     <label for="freday">Fredag</label>
                 </div>
                 <div class="form-layout">
-                    <input type="checkbox" name="saturday" id="saturday" required>
+                    <input type="radio" name="days" id="saturday" required>
                     <label for="saturday">Lördag</label>
                 </div>
                 <div class="form-layout">
-                    <input type="checkbox" name="sunday" id="sunday" required>
+                    <input type="radio" name="days" id="sunday" required>
                     <label for="sunday">Söndag</label>
                 </div>
-                        <button type="submit">Skicka in anmälan</button>
+                    <br>
+                    <button type="submit" value="submit">Skicka in anmälan</button>
+                </div>
+                   
             </form>
         </article>
 
