@@ -41,13 +41,13 @@ main {
     }
 
     .card1 .container__text {
-        max-width: 65em;
+        max-width: 25em;
         margin: 3em 1.2em 3em 1.2em;
         text-align:center;
     }
 
     .card2 .container__text {
-        max-width: 65em;
+        max-width: 25em;
         margin: 3em 1.2em 3em 1.2em;
         text-align:center;
     }
@@ -69,7 +69,7 @@ main {
         }
 
         .container__text {
-            max-width: 40em;
+            max-width: 30em;
         }
 
         .container__image3 {
