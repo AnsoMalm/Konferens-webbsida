@@ -29,27 +29,27 @@ body {
 }
 
 .container-textcard1 {
-    /*border: 1px solid black;*/
     border-radius: 2px; 
     margin: 1em 0.2em 1em 0.2em; 
     padding: 1.5em;
     background-color: var(--box2);
+    box-shadow: 0 0 0.4em 0.2em var(--shadows);
 }
 
 .container-textcard2 {
-    /*border: 1px solid black;*/
     border-radius: 2px; 
     margin: 1em 0.2em 1em 0.2em; 
     padding: 1.5em;
     background-color: var(--box1);
+    box-shadow: 0 0 0.4em 0.2em var(--shadows);
 }
 
 .container-textcard3 {
-    /*border: 1px solid black;*/
     border-radius: 2px; 
     margin: 1em 0.2em 1em 0.2em; 
     padding: 1.5em;
     background-color: var(--box3);
+    box-shadow: 0 0 0.4em 0.2em var(--shadows);
 }
 
 
