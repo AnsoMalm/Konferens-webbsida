@@ -13,61 +13,60 @@
     <header class="header-container">
         <div class="container__head">
             <a href="index.html">
-        <img class="container__image" src="/img/logga2.png" alt="Logga with text MetCom Better Webb"></a>
+            <img class="container__image" src="/img/logga2.png" alt="Logga with text MetCom Better Webb"></a>
         </div>
+        <nav class="container__nav">
+            <ul class="container__list">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="form.html">Anmälan</a></li>
+            </ul> 
+        </nav> 
     </header>
-    <nav class="container__nav">
-        <ul class="container__list">
-            <li><a href="index.html">Hem</a></li>
-            <li><a href="program.html">Program</a></li>
-            <li><a href="form.html">Anmälan</a></li>
-        </ul> 
-    </nav> 
-
+  
     <main>
         <section class="mainheading2">
-        <h1>MetCom 2022</h1>
-        <h2>Anmälan till konferensen</h2>
+            <h1>MetCom 2022</h1>
+            <h2>Anmälan till konferensen</h2>
         </section>
         <article class="flex-container">
-            <section class="container-info">
+            <div class="container-info">
                 <div class="Info-text">
-                        <h3>Information om Konferensen</h3>
-                        <p><span class="fetaklassen">Plats:</span></p>
-                        <p>Karlstad Conference Center (Karlstad CCC)</p>
-                        <p><span class="fetaklassen">Datum:</span></p>
-                        <p>9 - 11 December 2022</p>
-                        <ul> 
-                            <hr>
+                    <h3>Information om Konferensen</h3>
+                    <p><span class="fetaklassen">Plats:</span></p>
+                    <p>Karlstad Conference Center (Karlstad CCC)</p>
+                    <p><span class="fetaklassen">Datum:</span></p>
+                    <p>9 - 11 December 2022</p>
+                    <ul> 
+                        <hr>
                             <p><span class="fetaklassen">Deltagarpris:</span></p>
                             <span class="fetaklassen">Stora-passet</span>
-                            <li><p class="price">5000kr</p></li>
+                        <li><p class="price">5000kr</p></li>
                             <p>Ingår lunch(lör,sön), middag (fre,lör) och fika</p>
-                            <li><p class="price">3000kr</p></li>
+                        <li><p class="price">3000kr</p></li>
                             <p>Ingår ej lunch/middag</p>
                             <hr>
                             <span class="fetaklassen">Dagspasset Fredag</span>
-                            <li><p class="price">1500 kr</p></li>
+                        <li><p class="price">1500 kr</p></li>
                             <p>Ingår fika och middag</p>
-                            <li><p class="price">800 kr</p></li>
+                        <li><p class="price">800 kr</p></li>
                             <p>Ingår ej middag</p>
                             <hr>
                             <span class="fetaklassen">Dagspasset Lördag</span>
-                            <li><p class="price">3000 kr</p></li>
+                        <li><p class="price">3000 kr</p></li>
                             <p>Ingår lunch, middag och fika</p>
-                            <li><p class="price">850 kr</p></li>
+                        <li><p class="price">850 kr</p></li>
                             <p>Ingår ej lunch/middag</p>
                             <hr>
                             <span class="fetaklassen">Dagspasset Söndag</span>
-                            <li><p class="price">1500 kr</p></li>
+                        <li><p class="price">1500 kr</p></li>
                             <p>Ingår lunch och fika</p>
-                            <li><p class="price">750kr</p></li>
+                        <li><p class="price">750kr</p></li>
                             <p>Ingår ej lunch</p>
                             <hr>
-                        </ul>
-                    </div>
-                </div> 
-            </section>
+                    </ul>
+                </div>
+            </div> 
             <form class="container-form">
                 <div class="form-heading">
                     <label><h4>Skriv in dina personuppgifter</h4></label>
@@ -76,32 +75,32 @@
                     <input id="input-name" type="text" value="" placeholder="Nina" required>
                     <p class="error-message">Var vänligen skriv in ditt namn</p>
                 </div>
-                <br>
+                    <br>
                 <div class="formlayout-input">
                     <label for="input-secondname">Efternamn:</label>
                     <input id="input-secondname" type="text" value=""placeholder="Svensson" required> 
                 </div>
-                <br>
+                    <br>
                 <div class="formlayout-input">
                     <label for="input-adress">Adress:</label>
                     <input id="input-adress" type="text" value="" placeholder="Gatuadress" required>
                 </div>
-                <br>
+                    <br>
                 <div class="formlayout-input">
                     <label for="input-number">Postnummer:</label>
                     <input id="input-number" type="text" value="" placeholder="123 45" required minlength="5" maxlength="8">
                 </div>
-                <br>
+                    <br>
                 <div class="formlayout-input">
                     <label for="input-city">Stad:</label>
                     <input id="input-city" type="text" value="" required minlength="2" maxlength="25">
                 </div>
-                <br>
+                    <br>
                 <div class="formlayout-input">
                     <label for="input-phone">Telefonnummer:</label>
                     <input id="input-phone" type="tel" value="" placeholder="070-123 456 78" required minlength="8" maxlength="16">
                 </div>
-                <br>
+                    <br>
                 <div class="formlayout-input">
                     <label for="input-email">E-mail:</label>
                     <input id="input-email" type="text" value="" required maxlength="30">
@@ -111,85 +110,75 @@
                     <label>Välj nedan vad du vill ha för mat:</label>
                 </div>
                     <br>    
-                    <div class="formlayout__food">
-                        <input type="radio" name="food-meny" id="food1" required />
-                        <label for="food1">Kött</label>
-                    </div>
-
-                    <div class="formlayout__food">
-                        <input type="radio" name="food-meny" id="food2" required />
-                        <label for="food2">Fisk</label>
-                    </div>
-
-                    <div class="formlayout__food">
-                        <input type="radio" name="food-meny" id="food3" required />
-                        <label for="food3">Vegetariskt</label>
-                    </div>
-
-                    <div class="formlayout__food">
-                        <input type="radio" name="food-meny" id="nofood" required />
-                        <label for="nofood">Ingen mat</label>
-                    </div>
-                        <br>
-                    <div>
-                        <div class="formlayout-message">
-                            <label>Om du har allergier/annan information</label>
-                        </div>
-                        <textarea name="message" rows="10" cols="30" maxlength="170"></textarea>
-                    </div>
+                <div class="formlayout__food">
+                    <input type="radio" name="food-meny" id="food1" required />
+                    <label for="food1">Kött</label>
+                </div>
+                <div class="formlayout__food">
+                    <input type="radio" name="food-meny" id="food2" required />
+                    <label for="food2">Fisk</label>
+                </div>
+                <div class="formlayout__food">
+                    <input type="radio" name="food-meny" id="food3" required />
+                    <label for="food3">Vegetariskt</label>
+                </div>
+                <div class="formlayout__food">
+                    <input type="radio" name="food-meny" id="nofood" required />
+                    <label for="nofood">Ingen mat</label>
+                </div>
+                    <br>
+                <div class="formlayout-message">
+                    <label>Om du har allergier/annan information</label>
+                    <textarea name="message" rows="10" cols="30" maxlength="170"></textarea>
+                </div>
                     <hr>
-                    <div class="formlayout-heading">
-                        <label>Vilka dagar vill du gå?</label>
-                    </div>
+                <div class="formlayout-heading">
+                    <label>Vilka dagar vill du gå?</label>
+                </div>
                     <br>
-                    <div class="formlayout-pass">
-                        <label>Välj på Stora-passet eller Dagspasset</label>
-                    </div>
+                <div class="formlayout-pass">
+                    <label>Välj på Stora-passet eller Dagspasset</label>
+                </div>
                     <br>
-                    <div class="form-layout">
-                        <input type="radio" name="pass" id="pass1" required>
-                        <label for="pass1">Stora-passet</label>
-                    </div>
-                    <div class="form-layout">
-                        <input type="radio" name="pass" id="pass2" required>
-                        <label for="pass2">Dagspasset</label>
-                    </div>
+                <div class="form-layout">
+                    <input type="radio" name="pass" id="pass1" required>
+                    <label for="pass1">Stora-passet</label>
+                </div>
+                <div class="form-layout">
+                    <input type="radio" name="pass" id="pass2" required>
+                    <label for="pass2">Dagspasset</label>
+                </div>
                     <br>
-                    <div class="formlayout-daypass">
-                        <label>Om du väljer dagspasset - välj vilken/vilka dagar du vill gå</label>
+                <div class="formlayout-daypass">
+                    <label>Om du väljer dagspasset - välj vilken/vilka dagar du vill gå</label>
                     <br>
-                    </div>
-                    <div class="form-layout">
-                            <input type="checkbox" name="freday" id="freday" required>
-                            <label for="freday">Fredag</label>
-                        </div>
-                        <div class="form-layout">
-                            <input type="checkbox" name="saturday" id="saturday" required>
-                            <label for="saturday">Lördag</label>
-                        </div>
-                        <div class="form-layout">
-                            <input type="checkbox" name="sunday" id="sunday" required>
-                            <label for="sunday">Söndag</label>
-                        </div>
-                    </div>
-
-                    <button type="submit">Skicka in anmälan</button>
+                </div>
+                <div class="form-layout">
+                    <input type="checkbox" name="freday" id="freday" required>
+                    <label for="freday">Fredag</label>
+                </div>
+                <div class="form-layout">
+                    <input type="checkbox" name="saturday" id="saturday" required>
+                    <label for="saturday">Lördag</label>
+                </div>
+                <div class="form-layout">
+                    <input type="checkbox" name="sunday" id="sunday" required>
+                    <label for="sunday">Söndag</label>
+                </div>
+                        <button type="submit">Skicka in anmälan</button>
             </form>
-        </div>
         </article>
 
     </main>
 
-<footer>
-        <div class="container__contact">
-            <span>Kontakt:</span>
-            <p>MetCom AB</p>
-            <p>Ann-Sophie Malmqvist</p>
-            <p>Tel: 054-123456</p>
-            <p>info@metcom.com</p>
-        </div>
-</footer>
-
- 
+    <footer>
+            <div class="container__contact">
+                <span>Kontakt:</span>
+                <p>MetCom AB</p>
+                <p>Ann-Sophie Malmqvist</p>
+                <p>Tel: 054-123456</p>
+                <p>info@metcom.com</p>
+            </div>
+    </footer>
 </body>
 </html>
