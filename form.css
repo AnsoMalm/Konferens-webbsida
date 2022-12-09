@@ -85,23 +85,12 @@ input[type="checkbox"]:hover {
 }
 
 input:invalid {
-    border-right: 0.5em solid red;
+    border-right: 0.5em solid #A63004;
 }
 
 input:valid {
-    border-right: 0.5em solid green;
+    border-right: 0.5em solid rgb(26, 147, 26);
 
-}
-/*input:invalid {
-    visibility: visible;
-}*/
-
-.error-message {
-    visibility: hidden;
-	display: none;
-	margin: 0em;
-	font-size: 90%;
-	color: rgb(117, 16, 16);
 }
 
 .formlayout-input {
